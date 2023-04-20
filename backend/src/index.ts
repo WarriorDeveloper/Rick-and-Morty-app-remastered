@@ -1,3 +1,4 @@
-import app from "./app";
+import app from "./app"
+import connection from "./db"
 
-app.listen(3001, ()=>console.log(`server on port 3001`))
+connection().then(()=>app.listen(3001, ()=>console.log('server on port 3001')))
