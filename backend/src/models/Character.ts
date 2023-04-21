@@ -1,7 +1,6 @@
 import { Schema, model } from 'mongoose'
 
 const characterSchema = new Schema({
-    id: String,
     name: String,
     status: String,
     species: String,
